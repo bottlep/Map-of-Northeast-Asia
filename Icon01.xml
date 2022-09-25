@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon01 -->
+<!-- Author: Bottlep -->
+<!-- DateCreated: 2/8/2021 1:53:24 PM -->
+<GameData>
+	
+	
+	
+	
+	
+	<!--<IconDefinitions>
+		<Row Name="ICON_DISTRICT_RIVERHARBOUR"  Atlas="ICON_ATLAS_DISTRICTS" Index="4"/>
+	</IconDefinitions>-->
+	
+	
+	
+	
+	
+	<IconDefinitions>
+		<Row Name="ICON_DISTRICT_RIVERHARBOUR"  Atlas="ICON_ATLAS_DISTRICTS" Index="4"/>
+		<Row Name="ICON_FEATURE_LARGE_RIVER" Atlas="ICON_ATLAS_EXPANSION_1_FEATURES" Index="7"/>
+		<Row Name="ICON_FEATURE_NEA_FERRY" Atlas="ICON_ATLAS_EXPANSION_1_FEATURES" Index="8"/>
+
+		<Row Name="ICON_TERRAIN_TROPIC"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_TROPIC_HILLS"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_TROPIC_MOUNTAIN"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+		
+		<Row Name="ICON_TERRAIN_ARID"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_ARID_HILLS"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_ARID_MOUNTAIN"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+		
+		<Row Name="ICON_FEATURE_DEEPWATER_COAST" Atlas="ICON_ATLAS_EXPANSION_1_FEATURES" Index="8"/>
+		
+		<Row Name="ICON_FEATURE_SALTWATER_LAKE" Atlas="ICON_ATLAS_EXPANSION_1_FEATURES" Index="6"/>
+		<Row Name="ICON_FEATURE_FRESHWATER_LAKE" Atlas="ICON_ATLAS_EXPANSION_1_FEATURES" Index="7"/>
+
+		<Row Name="ICON_FEATURE_HUMID_FMOUNTAIN" Atlas="ICON_ATLAS_FEATURES" Index="4"/>
+		<Row Name="ICON_FEATURE_DRY_FMOUNTAIN" Atlas="ICON_ATLAS_EXPANSION_2_FEATURES" Index="13"/>
+
+		<Row Name="ICON_FEATURE_TALL_HUMID_FMOUNTAIN" Atlas="ICON_ATLAS_FEATURES" Index="5"/>
+		<Row Name="ICON_FEATURE_TALL_DRY_FMOUNTAIN" Atlas="ICON_ATLAS_EXPANSION_2_FEATURES" Index="14"/>
+		
+		<Row Name="ICON_BUILDING_LARGEDAM" Atlas="ICON_ATLAS_EXPANSION_2_BUILDINGS" Index="8"/>
+		<Row Name="ICON_BUILDING_LARGEBRIDGE" Atlas="ICON_ATLAS_EXPANSION_2_WONDERS" Index="0"/>
+
+		<Row Name="ICON_PROJECT_NEA_MOVE_CAPITAL" Atlas="ICON_ATLAS_XP2_PROJECTS" Index="5"/>
+		<Row Name="ICON_PROJECT_NEA_CONSTRUCT_PALACE" Atlas="ICON_ATLAS_XP2_PROJECTS" Index="4"/>
+		<Row Name="ICON_PROJECT_NEA_XIUYANGSHENGXI" Atlas="ICON_ATLAS_DISTRICTS" Index="0"/>
+		
+	</IconDefinitions>
+
+
+	<IconDefinitions>
+		<Row Name="ICON_FEATURE_NEA_W_TAIHU" Atlas="ICON_ATLAS_TERRAIN" Index="15"/>
+		<Row Name="ICON_FEATURE_NEA_W_DONGTINGHU" Atlas="ICON_ATLAS_TERRAIN" Index="15"/>
+		<Row Name="ICON_FEATURE_NEA_W_POYANGHU" Atlas="ICON_ATLAS_TERRAIN" Index="15"/>
+		<Row Name="ICON_FEATURE_NEA_W_TAISHAN"   Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+		<Row Name="ICON_FEATURE_NEA_W_SONGSHAN"   Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+		<Row Name="ICON_FEATURE_NEA_W_JIESHI" Atlas="ICON_ATLAS_TERRAIN" Index="15"/>
+		<Row Name="ICON_FEATURE_NEA_W_FUJISAN" Atlas="ICON_ATLAS_FEATURES" Index="12"/>
+		<Row Name="ICON_TERRAIN_HUMID_WU_PLAIN" Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_FEATURE_NEA_W_EMEISHAN"   Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+	</IconDefinitions>
+
+	<IconDefinitions>
+		<Row Name="ICON_TERRAIN_NEA_WARM__JIANGDONG"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__JIANGDONG"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__JIANGDONG"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+	</IconDefinitions>
+
+	<IconDefinitions>
+		<Row Name="ICON_TERRAIN_NEA_WARM__HUAISI"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__HUAISI"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__HUAISI"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+	</IconDefinitions>
+	
+	<IconDefinitions>
+		<Row Name="ICON_TERRAIN_NEA_WARM__JINGXIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__JINGXIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__JINGXIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+	</IconDefinitions>
+
+
+	<IconDefinitions>
+		<Row Name="ICON_TERRAIN_NEA_WARM__LINGNAN"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__LINGNAN"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__LINGNAN"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TROPIC__LINGNAN"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_HILLS__LINGNAN"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_MOUNTAIN__LINGNAN"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+	</IconDefinitions>
+
+
+	<IconDefinitions>
+		<Row Name="ICON_TERRAIN_NEA_WARM__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__WESTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__WESTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__WESTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+	</IconDefinitions>
+
+
+
+	<IconDefinitions>
+		
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__KOREA"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__KOREA"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__KOREA"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__KOREA"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__KOREA"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__KOREA"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+
+	</IconDefinitions>
+
+
+	<IconDefinitions>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__ZHONGYUAN"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__ZHONGYUAN"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__ZHONGYUAN"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__BINGDAI"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__BINGDAI"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__BINGDAI"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__YANZHAO"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__YANZHAO"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__YANZHAO"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__HEISHUI"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__HEISHUI"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__HEISHUI"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__SIBERIA"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__SIBERIA"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__SIBERIA"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__KHINGAN"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__KHINGAN"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__KHINGAN"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__KHINGAN"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__KHINGAN"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__KHINGAN"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__MONAN"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__MONAN"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__MONAN"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__MONAN"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__MONAN"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__MONAN"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__BASHU"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__BASHU"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__BASHU"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__MINTAI"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__MINTAI"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__MINTAI"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__MOBEI"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__QILU"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__QILU"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__QILU"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__YUNGUI"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__YUNGUI"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__YUNGUI"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__YINGLIAO"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__TUNGUS"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_COLD__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_HILLS__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_COLD_MOUNTAIN__EASTJAPAN"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TROPIC__MINTAI"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_HILLS__MINTAI"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_MOUNTAIN__MINTAI"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__INDOCHINA"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__INDOCHINA"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__INDOCHINA"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+		<Row Name="ICON_TERRAIN_NEA_TROPIC__INDOCHINA"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_HILLS__INDOCHINA"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_MOUNTAIN__INDOCHINA"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+		
+
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU__KHAM"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_HILLS__KHAM"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_MOUNTAIN__KHAM"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__KHAM"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__KHAM"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__KHAM"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__GUANZHONG"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU__AMDO"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_HILLS__AMDO"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_MOUNTAIN__AMDO"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__AMDO"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__AMDO"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__AMDO"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+
+
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU__UTSANG"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_HILLS__UTSANG"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_MOUNTAIN__UTSANG"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+		<Row Name="ICON_TERRAIN_NEA_WARM__UTSANG"            Atlas="ICON_ATLAS_TERRAIN" Index="0"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_HILLS__UTSANG"            Atlas="ICON_ATLAS_TERRAIN" Index="1"/>
+		<Row Name="ICON_TERRAIN_NEA_WARM_MOUNTAIN__UTSANG"            Atlas="ICON_ATLAS_TERRAIN" Index="2"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_HILLS__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_MOUNTAIN__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__NANJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+
+
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="12"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_HILLS__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="13"/>
+		<Row Name="ICON_TERRAIN_NEA_PLATEAU_MOUNTAIN__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="14"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="3"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_HILLS__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="4"/>
+		<Row Name="ICON_TERRAIN_NEA_TEMPERATE_MOUNTAIN__BEIJIANG"            Atlas="ICON_ATLAS_TERRAIN" Index="5"/>
+
+
+		<Row Name="ICON_TERRAIN_NEA_TROPIC__HINDUSTAN"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_HILLS__HINDUSTAN"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_TROPIC_MOUNTAIN__HINDUSTAN"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+
+
+
+		<Row Name="ICON_TERRAIN_NEA_ARID__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="9"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_HILLS__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="10"/>
+		<Row Name="ICON_TERRAIN_NEA_ARID_MOUNTAIN__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="11"/>
+
+		<Row Name="ICON_TERRAIN_NEA_DESERT__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="6"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_HILLS__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="7"/>
+		<Row Name="ICON_TERRAIN_NEA_DESERT_MOUNTAIN__LONGYOU"            Atlas="ICON_ATLAS_TERRAIN" Index="8"/>
+
+
+
+
+	</IconDefinitions>
+	<IconDefinitions>
+		<Row Name="ICON_ABILITY_NEA_WARM_MANPOWER"                      Atlas="ICON_ATLAS_UNITABILITIES" Index="0"/>
+		<Row Name="ICON_ABILITY_NEA_TEMPERATE_MANPOWER"                     Atlas="ICON_ATLAS_UNITABILITIES" Index="1"/>
+
+	</IconDefinitions>
+</GameData>

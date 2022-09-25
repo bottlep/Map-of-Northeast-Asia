@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="897aeccb-aada-4695-81c1-86d334069c21" version="3">
+  <Properties>
+    <Name>Map of Northeast Asia 02</Name>
+    <Description>LOC_NEAMOD_DESCRIPTION</Description>
+    <CustomProperties xmlns="http://schemas.microsoft.com/developer/msbuild/2003"></CustomProperties>
+    <Created>1664093667</Created>
+    <Teaser>LOC_NEAMOD_TEASER</Teaser>
+    <Authors>Bottlep</Authors>
+    <SpecialThanks>Hemmelfort, Dianseng</SpecialThanks>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <ActionCriteria>
+    <Criteria id="NEA_Advanced">
+      <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+      <ConfigurationValueMatches>
+        <Group>Game</Group>
+        <ConfigurationId>GAMEMODE_NEA_ADVANCED</ConfigurationId>
+        <Value>1</Value>
+      </ConfigurationValueMatches>
+    </Criteria>
+    <Criteria id="NEA_Advanced02">
+      <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+      <ConfigurationValueMatches>
+        <Group>Game</Group>
+        <ConfigurationId>GAMEMODE_NEA_ADVANCED02</ConfigurationId>
+        <Value>1</Value>
+      </ConfigurationValueMatches>
+    </Criteria>
+  </ActionCriteria>
+  <FrontEndActions>
+    <UpdateDatabase id="Data_F">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+        <Priority>10</Priority>
+      </Properties>
+      <File>GameData01_TerrainFeature.xml</File>
+      <File>GameData02_MapSetting.xml</File>
+      <File>GameData03_MapText.xml</File>
+      <File priority="13">GameData11_NaturalWonder.xml</File>
+      <File>GameData12_TerritoryEffect.xml</File>
+      <File>GameData51_Adaption.xml</File>
+      <File>GameData01_01.xml</File>
+      <File>GameData01_02.xml</File>
+      <File>GameData01_03.xml</File>
+      <File>GameData06_ClimaticRegional.xml</File>
+    </UpdateDatabase>
+    <UpdateIcons id="Icon_F">
+      <File>Icon01.xml</File>
+    </UpdateIcons>
+    <UpdateArt id="Art_F">
+      <File>Map of Northeast Asia 02.dep</File>
+    </UpdateArt>
+    <AddMap id="TestMap">
+      <Properties>
+        <Group>Maps:Expansion2Maps</Group>
+        <Name>TESTMAP</Name>
+        <Description>65665777DD</Description>
+      </Properties>
+      <File>NEA_ceshi0.Civ6Map</File>
+    </AddMap>
+    <UpdateDatabase id="Config_F">
+      <Properties>
+        <LoadOrder>99999</LoadOrder>
+      </Properties>
+      <File>Config.xml</File>
+    </UpdateDatabase>
+    <UpdateText id="Text_F">
+      <Properties>
+        <LoadOrder>99999</LoadOrder>
+      </Properties>
+      <File priority="99999">Text02.xml</File>
+      <File priority="15">Text01.xml</File>
+      <File>Text03_CityName.xml</File>
+    </UpdateText>
+    <AddMap id="NEA02_TSL">
+      <Properties>
+        <Group>Maps:Expansion2Maps</Group>
+        <Description>LOC_NEAMAP_TSL_DESCRIPTION</Description>
+        <Name>LOC_NEAMAP_TSL_NAME</Name>
+      </Properties>
+      <File>NEA02_TSL.Civ6Map</File>
+    </AddMap>
+    <AddMap id="NEA02_Randmo">
+      <Properties>
+        <Group>Maps:Expansion2Maps</Group>
+        <Name>LOC_NEAMAP_RANDOM_NAME</Name>
+        <Description>LOC_NEAMAP_RANDOM_DESCRIPTION</Description>
+      </Properties>
+      <File>NEA02_Random.Civ6Map</File>
+    </AddMap>
+    <AddMap id="NewAction">
+      <Properties>
+        <Name>LOC_NEAMAP_TEST_NAME</Name>
+        <DESCRIPTION>LOC_NEAMAP_TEST_DESCRIPTION</DESCRIPTION>
+      </Properties>
+      <File>NEA_ceshi0.Civ6Map</File>
+    </AddMap>
+    <UpdateColors id="Color_F">
+      <File>GameData71_Colour.xml</File>
+    </UpdateColors>
+    <AddMap id="nea02_WestInvade">
+      <Properties>
+        <Group>Maps:Expansion2Maps</Group>
+        <Description>LOC_NEAMAP_WEST_INVADE_DESCRIPTION</Description>
+        <Name>LOC_NEAMAP_WEST_INVADE_NAME</Name>
+      </Properties>
+      <File priority="1">NEA02_WEST_INVADE.Civ6Map</File>
+    </AddMap>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="Data_I">
+      <Properties>
+        <LoadOrder>99999</LoadOrder>
+        <Priority>10</Priority>
+      </Properties>
+      <File>GameData01_TerrainFeature.xml</File>
+      <File>GameData02_MapSetting.xml</File>
+      <File>GameData03_MapText.xml</File>
+      <File priority="9">GameData11_NaturalWonder.xml</File>
+      <File>GameData12_TerritoryEffect.xml</File>
+      <File>GameData51_Adaption.xml</File>
+      <File>GameData01_01.xml</File>
+      <File>GameData01_02.xml</File>
+      <File>GameData01_03.xml</File>
+    </UpdateDatabase>
+    <UpdateIcons id="Icon_I">
+      <File>Icon01.xml</File>
+    </UpdateIcons>
+    <UpdateArt id="Art_I">
+      <File>Map of Northeast Asia 02.dep</File>
+    </UpdateArt>
+    <UpdateText id="Text_I">
+      <Properties>
+        <LoadOrder>99999999</LoadOrder>
+      </Properties>
+      <File priority="8">Text02.xml</File>
+      <File priority="11">Text01.xml</File>
+      <File>Text03_CityName.xml</File>
+    </UpdateText>
+    <AddGameplayScripts id="GameplayLua">
+      <Criteria>NEA_Advanced02</Criteria>
+      <File>EffectLua01.lua</File>
+      <File>EffectLua03.lua</File>
+    </AddGameplayScripts>
+    <AddUserInterfaces id="UI">
+      <Properties>
+        <Context>InGame</Context>
+      </Properties>
+      <Criteria>NEA_Advanced02</Criteria>
+      <File>MapLua01.xml</File>
+    </AddUserInterfaces>
+    <UpdateDatabase id="Data_Advanced">
+      <Properties>
+        <LoadOrder>99999999</LoadOrder>
+        <Priority>1</Priority>
+      </Properties>
+      <Criteria>NEA_Advanced</Criteria>
+      <File>GameData21_TerrainFeature_b.xml</File>
+      <File priority="8">GameData06_ClimaticRegional.xml</File>
+    </UpdateDatabase>
+    <UpdateColors id="Color_I">
+      <File>GameData71_Colour.xml</File>
+    </UpdateColors>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Buildings.artdef</File>
+    <File>ArtDefs/Districts.artdef</File>
+    <File>ArtDefs/Features.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
+    <File>ArtDefs/StrategicView.artdef</File>
+    <File>ArtDefs/Terrains.artdef</File>
+    <File>Config.xml</File>
+    <File>EffectLua01.lua</File>
+    <File>EffectLua02.lua</File>
+    <File>EffectLua03.lua</File>
+    <File>GameData01_01.xml</File>
+    <File>GameData01_02.xml</File>
+    <File>GameData01_03.xml</File>
+    <File>GameData01_TerrainFeature.xml</File>
+    <File>GameData02_MapSetting.xml</File>
+    <File>GameData03_MapText.xml</File>
+    <File>GameData05_Civ_Leader.xml</File>
+    <File>GameData06_ClimaticRegional.xml</File>
+    <File>GameData11_NaturalWonder.xml</File>
+    <File>GameData12_TerritoryEffect.xml</File>
+    <File>GameData21_TerrainFeature_b.xml</File>
+    <File>GameData51_Adaption.xml</File>
+    <File>GameData71_Colour.xml</File>
+    <File>GameData_wait.xml</File>
+    <File>Icon01.xml</File>
+    <File>LuaWait.lua</File>
+    <File>Map of Northeast Asia 02.dep</File>
+    <File>MapLua01.lua</File>
+    <File>MapLua01.xml</File>
+    <File>Map_NEA_02.Art.xml</File>
+    <File>NEA02_Random.Civ6Map</File>
+    <File>NEA02_TSL.Civ6Map</File>
+    <File>NEA02_WEST_INVADE.Civ6Map</File>
+    <File>NEA_ceshi0.Civ6Map</File>
+    <File>NEA_S146.Civ6Map</File>
+    <File>TEST001.xml</File>
+    <File>Text01.xml</File>
+    <File>Text02.xml</File>
+    <File>Text03_CityName.xml</File>
+  </Files>
+</Mod>

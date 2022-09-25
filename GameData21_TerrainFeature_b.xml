@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData21_TerrainFeature_b -->
+<!-- Author: BOTTLEP -->
+<!-- DateCreated: 7/5/2022 10:21:04 PM -->
+<GameData>
+
+
+
+	<!--山脉移动力和掉血和战斗力修正-->
+
+	<!--<Route_ValidBuildUnits>
+		<Row>
+			<RouteType>ROUTE_ANCIENT_ROAD</RouteType>
+			<UnitType>UNIT_BUILDER</UnitType>
+
+		</Row>
+		
+	</Route_ValidBuildUnits>-->
+
+	<Features>
+		<Update>
+			<Where FeatureType="FEATURE_HUMID_FMOUNTAIN"/>
+			<Set Impassable="false" />
+		</Update>
+		<Update>
+			<Where FeatureType="FEATURE_DRY_FMOUNTAIN"/>
+			<Set Impassable="false" />
+		</Update>
+	</Features>
+
+	<Improvements>
+
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_MOUNTAIN_TUNNEL" />
+			<Set Removable="1"/>
+		</Update>
+
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_MOUNTAIN_ROAD" />
+			<Set Removable="1"/>
+		</Update>
+	</Improvements>
+
+	<Improvements_XP2>
+		<!--Row ImprovementType="IMPROVEMENT_GREAT_WALL" AllowImpassableMovement="true" BuildOnAdjacentPlot="true"/-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_MOUNTAIN_TUNNEL"/>
+			<Set AllowImpassableMovement="true"/>
+		</Update>
+
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_MOUNTAIN_ROAD"/>
+			<Set AllowImpassableMovement="true"/>
+		</Update>
+	</Improvements_XP2>
+	
+
+	<UnitAbilityModifiers>
+
+
+		<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_RANGED_DEFENCE_DEBUFF</ModifierId>
+		</Row>
+
+
+		<!--<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_RIVER_COST</ModifierId>
+		</Row>-->
+		
+		<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_COST</ModifierId>
+		</Row>
+
+		<!--<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_HILL_COST</ModifierId>
+		</Row>
+
+		<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_FOREST_COST</ModifierId>
+		</Row>-->
+
+		<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF_AB</ModifierId>
+		</Row>
+
+		<Row>
+			<UnitAbilityType>ABILITY_NEA_COMBAT_UNIT_COMMON_ABILITY</UnitAbilityType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF_AB</ModifierId>
+		</Row>
+		
+		
+	</UnitAbilityModifiers>
+	
+	
+
+	<BuildingModifiers>
+
+		<!--<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_MOUNTAIN_UNBUILD</ModifierId>
+
+		</Row>
+
+
+
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF</ModifierId>
+
+		</Row>
+
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF</ModifierId>
+
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_COST</ModifierId>
+
+		</Row>-->
+
+
+
+	</BuildingModifiers>
+
+	<Modifiers>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_MOUNTAIN_UNBUILD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_VALID_TERRAIN</ModifierType>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_HEAL_PER_TURN</ModifierType>
+
+			<!--<Repeatable>true</Repeatable>-->
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_CLASS_NEA_MOUNTAIN</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF_AB</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN</ModifierType>
+
+			<!--<Repeatable>true</Repeatable>-->
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_CLASS_NEA_MOUNTAIN</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF_AB</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF_SET</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+
+		
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_RIVER_COST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_RIVERS</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_COST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_HILL_COST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_FOREST_COST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</SubjectRequirementSetId>
+
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_RANGED_DEFENCE_DEBUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_DEFEND_RANGED</SubjectRequirementSetId>
+
+		</Row>
+
+		
+		
+
+	</Modifiers>
+
+
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_MOUNTAIN_UNBUILD</ModifierId>
+			<Name>TerrainType</Name>
+			<Value>TERRAIN_ARID_MOUNTAIN</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_MOUNTAIN_UNBUILD</ModifierId>
+			<Name>Valid</Name>
+			<Value>1</Value>
+		</Row>
+
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>-4</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF</ModifierId>
+			<Name>Type</Name>
+			<Value>ALL</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>-1</Value>
+		</Row>
+
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF_AB</ModifierId>
+			<Name>Amount</Name>
+			<Value>-4</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_HEAL_DEBUFF_AB</ModifierId>
+			<Name>Type</Name>
+			<Value>ALL</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF_AB</ModifierId>
+			<Name>Amount</Name>
+			<Value>0</Value>
+		</Row>
+
+		
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_MOVEMENT_DEBUFF_SET</ModifierId>
+			<Name>Amount</Name>
+			<Value>0</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_COST</ModifierId>
+			<Name>Ignore</Name>
+			<Value>1</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_COST</ModifierId>
+			<Name>Type</Name>
+			<Value>ALL</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_HILL_COST</ModifierId>
+			<Name>Ignore</Name>
+			<Value>1</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_HILL_COST</ModifierId>
+			<Name>Type</Name>
+			<Value>HILLS</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_FOREST_COST</ModifierId>
+			<Name>Ignore</Name>
+			<Value>1</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_FOREST_COST</ModifierId>
+			<Name>Type</Name>
+			<Value>FOREST</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_STAY_IGNORE_RIVER_COST</ModifierId>
+			<Name>Ignore</Name>
+			<Value>1</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOUNTAIN_RANGED_DEFENCE_DEBUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>-10</Value>
+		</Row>
+
+		
+
+	</ModifierArguments>
+
+
+	<ModifierStrings>
+
+		
+		<Row ModifierId="MODIF_NEA_MOUNTAIN_RANGED_DEFENCE_DEBUFF" Context="Preview" Text="LOC_MODIF_NEA_MOUNTAIN_RANGED_DEFENCE_DEBUFF_DESCRIPTION"/>
+
+	</ModifierStrings>
+	
+
+	<Requirements>
+
+		<Row  RequirementId="REQUIRES_NEA_PLOT_NO_MOUNTAIN_TUNNEL" RequirementType="REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES" Inverse="1" />
+		<Row  RequirementId="REQUIRES_NEA_PLOT_NO_MOUNTAIN_ROAD" RequirementType="REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES" Inverse="1" />
+
+
+		<Row  RequirementId="REQUIRES_NEA_UNIT_COMBAT_RANGED" RequirementType="REQUIREMENT_COMBAT_TYPE_MATCHES" />
+		<Row  RequirementId="REQUIRES_NEA_UNIT_DEFEND" RequirementType="REQUIREMENT_PLAYER_IS_ATTACKING" Inverse="1"/>
+
+
+	</Requirements>
+
+
+	<RequirementArguments>
+
+
+		<Row  RequirementId="REQUIRES_NEA_PLOT_NO_MOUNTAIN_TUNNEL" Name="ImprovementType"  Value="IMPROVEMENT_MOUNTAIN_TUNNEL" />
+		<Row  RequirementId="REQUIRES_NEA_PLOT_NO_MOUNTAIN_ROAD" Name="ImprovementType"  Value="IMPROVEMENT_MOUNTAIN_ROAD"  />
+
+		<Row  RequirementId="REQUIRES_NEA_UNIT_COMBAT_RANGED" Name="CombatType"  Value="COMBAT_RANGED"  />
+
+		
+	</RequirementArguments>
+
+
+	<RequirementSetRequirements>
+		<Row  RequirementSetId="REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL"  RequirementId="REQUIRES_NEA_PLOT_CLASS_NEA_MOUNTAIN" />
+		<Row  RequirementSetId="REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL"  RequirementId="REQUIRES_NEA_PLOT_NO_MOUNTAIN_TUNNEL" />
+		<Row  RequirementSetId="REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL"  RequirementId="REQUIRES_NEA_PLOT_NO_MOUNTAIN_ROAD" />
+
+
+		<Row  RequirementSetId="REQSET_NEA_PLOT_NEA_MOUNTAIN_DEFEND_RANGED"  RequirementId="REQUIRES_NEA_PLOT_CLASS_NEA_MOUNTAIN" />
+		<Row  RequirementSetId="REQSET_NEA_PLOT_NEA_MOUNTAIN_DEFEND_RANGED"  RequirementId="REQUIRES_NEA_UNIT_DEFEND" />
+		<Row  RequirementSetId="REQSET_NEA_PLOT_NEA_MOUNTAIN_DEFEND_RANGED"  RequirementId="REQUIRES_NEA_UNIT_COMBAT_RANGED" />
+		
+
+	</RequirementSetRequirements>
+
+
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_DEFEND_RANGED</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		
+		<Row>
+			<RequirementSetId>REQSET_NEA_PLOT_NEA_MOUNTAIN_WITHOUT_TUNNEL</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+
+	</RequirementSets>
+
+
+
+	<!--AI送移民-->
+
+	<CivicModifiers>
+		<Row>
+			<CivicType>CIVIC_EARLY_EMPIRE</CivicType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER_CAPITAL</ModifierId>
+		</Row>
+
+		<Row>
+			<CivicType>CIVIC_POLITICAL_PHILOSOPHY</CivicType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER_CAPITAL</ModifierId>
+		</Row>
+
+		<Row>
+			<CivicType>CIVIC_FEUDALISM</CivicType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER_CAPITAL</ModifierId>
+		</Row>
+		
+	</CivicModifiers>
+	
+	<DistrictModifiers>
+
+
+		<!--<Row>
+			<DistrictType>DISTRICT_HOLY_SITE</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_LAVRA</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>-->
+
+		<!--<Row>
+			<DistrictType>DISTRICT_COMMERCIAL_HUB</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_SUGUBA</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>-->
+
+		<Row>
+			<DistrictType>DISTRICT_BATH</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_AQUEDUCT</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>
+
+		<!--<Row>
+			<DistrictType>DISTRICT_HARBOR</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_ROYAL_NAVY_DOCKYARD</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_COTHON</DistrictType>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+		</Row>-->
+		
+
+	</DistrictModifiers>
+
+
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER_CAPITAL</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_UNIT_IN_CAPITAL</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+		</Row>
+
+	</Modifiers>
+
+	<ModifierArguments>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+			<Name>UnitType</Name>
+			<Value>UNIT_SETTLER</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER_CAPITAL</ModifierId>
+			<Name>UnitType</Name>
+			<Value>UNIT_SETTLER</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_GRANT_SETTLER_CAPITAL</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+
+	</ModifierArguments>
+
+
+		<!--AI加强-->
+	
+	<BuildingModifiers>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_FOOD</ModifierId>
+
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_CULTURE</ModifierId>
+
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_SCIENCE</ModifierId>
+
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_AI_BUFF_FOOD_RATE</ModifierId>
+
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_AI_BUFF_CULTURE_RATE</ModifierId>
+
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_AI_BUFF_SCIENCE_RATE</ModifierId>
+
+		</Row>
+
+	</BuildingModifiers>
+	
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_FOOD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_CHANGE</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+			<SubjectRequirementSetId>REQSET_NEA_DISTRICT_CITY_CENTER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_CHANGE</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+			<SubjectRequirementSetId>REQSET_NEA_DISTRICT_CITY_CENTER</SubjectRequirementSetId>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_CHANGE</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+			<SubjectRequirementSetId>REQSET_NEA_DISTRICT_CITY_CENTER</SubjectRequirementSetId>
+
+		</Row>
+		
+		
+			
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_FOOD_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_CULTURE_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+
+		</Row>
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_SCIENCE_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_AI</OwnerRequirementSetId>
+
+		</Row>
+		
+	</Modifiers>
+	
+	
+
+
+	<ModifierArguments>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_FOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_FOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>6</Value>
+		</Row>
+		
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>6</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_ADD_CITY_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>6</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_FOOD_RATE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_FOOD_RATE</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_CULTURE_RATE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_CULTURE_RATE</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_SCIENCE_RATE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_AI_BUFF_SCIENCE_RATE</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+	
+	</ModifierArguments>
+	
+	
+	
+	
+	<RequirementSetRequirements>
+
+
+		<Row  RequirementSetId="REQSET_NEA_DISTRICT_CITY_CENTER"    RequirementId="REQUIRES_NEA_DISTRICT_CITY_CENTER"   />
+
+	
+	</RequirementSetRequirements>
+	
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQSET_NEA_DISTRICT_CITY_CENTER</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	
+	<Requirements>
+
+
+		<Row  RequirementId="REQUIRES_NEA_DISTRICT_CITY_CENTER" RequirementType="REQUIREMENT_DISTRICT_TYPE_MATCHES" />
+
+	</Requirements>
+
+	<RequirementArguments>
+
+		<Row  RequirementId="REQUIRES_NEA_DISTRICT_CITY_CENTER" Name="DistrictType"  Value="DISTRICT_CITY_CENTER"  />
+		
+	</RequirementArguments>
+
+
+	<!--水域移动-->
+
+	<BuildingModifiers>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_EMBARKED_MOVEMENT</ModifierId>
+
+		</Row>
+
+	</BuildingModifiers>
+	
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_EMBARKED_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_EMBARKED_MOVEMENT</ModifierType>
+		</Row>
+		
+	</Modifiers>
+
+	<ModifierArguments>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_EMBARKED_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+
+	</ModifierArguments>
+
+	
+	<!--区域专家加成-->
+	
+	<District_CitizenYieldChanges>
+		
+		<Update>
+			<Where YieldType="YIELD_GOLD" YieldChange="4"/>
+			<Set YieldChange="8"/>
+		</Update>
+		
+		<Update>
+			<Where YieldType="YIELD_GOLD" YieldChange="2"/>
+			<Set YieldChange="5"/>
+		</Update>
+		
+		<Update>
+			<Where YieldType="YIELD_CULTURE" YieldChange="2"/>
+			<Set YieldChange="5"/>
+		</Update>
+		
+		<Update>
+			<Where YieldType="YIELD_SCIENCE" YieldChange="2"/>
+			<Set YieldChange="5"/>
+		</Update>
+		
+		<Update>
+			<Where YieldType="YIELD_FAITH" YieldChange="2"/>
+			<Set YieldChange="5"/>
+		</Update>
+		
+		
+		
+		
+		<Update>
+			<Where YieldType="YIELD_FOOD" YieldChange="1"/>
+			<Set YieldChange="3"/>
+		</Update>
+		
+		<Update>
+			<Where YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+			<Set YieldChange="3"/>
+		</Update>
+		
+		<Update>
+			<Where YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+			<Set YieldChange="5"/>
+		</Update>
+		
+	
+	
+	</District_CitizenYieldChanges>
+
+	<!--老马修改-->
+
+	<GovernorPromotionModifiers>
+
+		<Update>
+			<Where GovernorPromotionType="GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION" ModifierId="EXPEDITION_ADJUST_SETTLERS_CONSUME_POPULATION"/>
+			<Set ModifierId="MODIF_NEA_SETTLER_POPULATION_REFUND"/>
+		</Update>
+
+		<Row>
+			<GovernorPromotionType>GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION</GovernorPromotionType>
+			<ModifierId>MODIF_NEA_BUILDER_POPULATION_REFUND</ModifierId>
+		</Row>
+		
+	</GovernorPromotionModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_SETTLER_POPULATION_REFUND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_CHANGE_POPULATION_CREATE_UNIT</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_BUILDER_POPULATION_REFUND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_CHANGE_POPULATION_CREATE_UNIT</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION</SubjectRequirementSetId>
+		</Row>
+
+	</Modifiers>
+
+
+
+	<ModifierArguments>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_SETTLER_POPULATION_REFUND</ModifierId>
+			<Name>UnitType</Name>
+			<Value>UNIT_SETTLER</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_SETTLER_POPULATION_REFUND</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_BUILDER_POPULATION_REFUND</ModifierId>
+			<Name>UnitType</Name>
+			<Value>UNIT_BUILDER</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_BUILDER_POPULATION_REFUND</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+
+
+	
+	</ModifierArguments>
+
+
+	<RequirementSetRequirements>
+
+
+		<Row  RequirementSetId="REQSET_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION"    RequirementId="REQUIRES_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION"   />
+
+	
+	</RequirementSetRequirements>
+	
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQSET_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	
+	<Requirements>
+
+
+		<Row  RequirementId="REQUIRES_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION" RequirementType="REQUIREMENT_CITY_HAS_SPECIFIC_GOVERNOR_PROMOTION_TYPE" />
+
+	</Requirements>
+
+	<RequirementArguments>
+
+		<Row  RequirementId="REQUIRES_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION" Name="Established"  Value="1"  />
+		<Row  RequirementId="REQUIRES_NEA_CITY_HAS_GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION" Name="GovernorPromotionType"  Value="GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION"  />
+	</RequirementArguments>
+
+	<!--区域专家产出-->
+
+	<!--<District_CitizenGreatPersonPoints>
+		<Row DistrictType="DISTRICT_ENCAMPMENT" GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_HARBOR" GreatPersonClassType="GREAT_PERSON_CLASS_ADMIRAL" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_INDUSTRIAL_ZONE" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_COMMERCIAL_HUB" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_HOLY_SITE" GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_CAMPUS" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_THEATER" GreatPersonClassType="GREAT_PERSON_CLASS_WRITER" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_THEATER" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_THEATER" GreatPersonClassType="GREAT_PERSON_CLASS_MUSICIAN" PointsPerTurn="1"/>
+	</District_CitizenGreatPersonPoints>-->
+
+
+	<!--科研、文化倍率-->
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_BABYLON</TraitType>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE_BABYLON</ModifierId>
+
+		</Row>
+	</TraitModifiers>
+	
+	
+	<BuildingModifiers>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE</ModifierId>
+
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_CULTURE_RATE</ModifierId>
+
+		</Row>
+
+	</BuildingModifiers>
+
+	<CivicModifiers>
+
+		<Row>
+			<CivicType>CIVIC_THE_ENLIGHTENMENT</CivicType>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE2</ModifierId>
+
+		</Row>
+
+		<Row>
+			<CivicType>CIVIC_THE_ENLIGHTENMENT</CivicType>
+			<ModifierId>MODIF_NEA_CULTURE_RATE2</ModifierId>
+
+		</Row>
+
+	</CivicModifiers>
+	
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_CULTURE_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE_BABYLON</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+
+		
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE2</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_CULTURE_RATE2</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+		</Row>
+		
+	</Modifiers>
+
+
+	<ModifierArguments>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE</ModifierId>
+			<Name>Amount</Name>
+			<Value>-45</Value>
+		</Row>
+
+		
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE_BABYLON</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE_BABYLON</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+
+		
+
+		<Row>
+			<ModifierId>MODIF_NEA_CULTURE_RATE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		
+
+		<Row>
+			<ModifierId>MODIF_NEA_CULTURE_RATE</ModifierId>
+			<Name>Amount</Name>
+			<Value>-45</Value>
+		</Row>
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE2</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_SCIENCE_RATE2</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_CULTURE_RATE2</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CULTURE_RATE2</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		
+		
+
+	</ModifierArguments>
+	
+	
+	<!--单位人口消耗-->
+	
+	<Units>
+		<Update>  <Where UnitType="UNIT_SETTLER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ZULU_IMPI"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BUILDER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_TRADER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MISSIONARY"/> <Set PopulationCost="0"/> </Update>
+<Update>  <Where UnitType="UNIT_APOSTLE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_INQUISITOR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GURU"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_WARRIOR_MONK"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ARCHAEOLOGIST"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_GENERAL"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_ADMIRAL"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_ENGINEER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_MERCHANT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_PROPHET"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_SCIENTIST"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_WRITER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_ARTIST"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREAT_MUSICIAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SPY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_NATURALIST"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SCOUT"/> <Set PopulationCost="0"/> </Update>
+<Update>  <Where UnitType="UNIT_WARRIOR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SLINGER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BARBARIAN_HORSEMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BARBARIAN_HORSE_ARCHER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SUMERIAN_WAR_CART"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GALLEY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_NORWEGIAN_LONGSHIP"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ARCHER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SPEARMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_HEAVY_CHARIOT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BATTERING_RAM"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GREEK_HOPLITE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SWORDSMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_HORSEMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SCYTHIAN_HORSE_ARCHER"/> <Set PopulationCost="0"/> </Update>
+<Update>  <Where UnitType="UNIT_ROMAN_LEGION"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_KONGO_SHIELD_BEARER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CATAPULT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SIEGE_TOWER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_QUADRIREME"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_EGYPTIAN_CHARIOT_ARCHER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_JAPANESE_SAMURAI"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_NORWEGIAN_BERSERKER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_KNIGHT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_INDIAN_VARU"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ARABIAN_MAMLUK"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CROSSBOWMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CHINESE_CROUCHING_TIGER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MILITARY_ENGINEER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_PIKEMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MUSKETMAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SPANISH_CONQUISTADOR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CARAVEL"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BOMBARD"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_FRIGATE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_PRIVATEER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ENGLISH_SEADOG"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_FIELD_CANNON"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CAVALRY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_RUSSIAN_COSSACK"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ENGLISH_REDCOAT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_FRENCH_GARDE_IMPERIALE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MEDIC"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_IRONCLAD"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_RANGER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_OBSERVATION_BALLOON"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BIPLANE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_INFANTRY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ARTILLERY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BATTLESHIP"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BRAZILIAN_MINAS_GERAES"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SUBMARINE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GERMAN_UBOAT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_AT_CREW"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_TANK"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_FIGHTER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_AMERICAN_P51"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BOMBER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ANTIAIR_GUN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MACHINE_GUN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_AIRCRAFT_CARRIER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_DESTROYER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_HELICOPTER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_NUCLEAR_SUBMARINE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MECHANIZED_INFANTRY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ROCKET_ARTILLERY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MOBILE_SAM"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_JET_FIGHTER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_JET_BOMBER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MISSILE_CRUISER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MODERN_AT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MODERN_ARMOR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MAN_AT_ARMS"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_LINE_INFANTRY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_TREBUCHET"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_AZTEC_EAGLE_WARRIOR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_INDONESIAN_JONG"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_KHMER_DOMREY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_POLISH_HUSSAR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_NUBIAN_PITATI"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MACEDONIAN_HYPASPIST"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MACEDONIAN_HETAIROI"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_PERSIAN_IMMORTAL"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_DIGGER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_KOREAN_HWACHA"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SCOTTISH_HIGHLANDER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_DE_ZEVEN_PROVINCIEN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MONGOLIAN_KESHIG"/> <Set PopulationCost="0"/> </Update>
+<Update>  <Where UnitType="UNIT_GEORGIAN_KHEVSURETI"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MAPUCHE_MALON_RAIDER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CREE_OKIHTCITAW"/> <Set PopulationCost="0"/> </Update>
+<Update>  <Where UnitType="UNIT_SPEC_OPS"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_DRONE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_PIKE_AND_SHOT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SUPPLY_CONVOY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SKIRMISHER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_COURSER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CUIRASSIER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GIANT_DEATH_ROBOT"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ROCK_BAND"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_CANADA_MOUNTIE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_HUNGARY_BLACK_ARMY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_HUNGARY_HUSZAR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_INCA_WARAKAQ"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MALI_MANDEKALU_CAVALRY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MAORI_TOA"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_OTTOMAN_BARBARY_CORSAIR"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_PHOENICIA_BIREME"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SULEIMAN_JANISSARY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_SWEDEN_CAROLEAN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_AMERICAN_ROUGH_RIDER"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_MAYAN_HULCHE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_LAHORE_NIHANG"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_COMANDANTE_GENERAL"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_COLOMBIAN_LLANERO"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BYZANTINE_DROMON"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BYZANTINE_TAGMA"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_GAUL_GAESATAE"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_VIETNAMESE_VOI_CHIEN"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_ETHIOPIAN_OROMO_CAVALRY"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_BABYLONIAN_SABUM_KIBITTUM"/> <Set PopulationCost="1"/> </Update>
+<Update>  <Where UnitType="UNIT_PORTUGUESE_NAU"/> <Set PopulationCost="1"/> </Update>
+	
+	
+	</Units>
+
+	<!--<Districts>
+
+		<Update>
+			<Where DistrictType="DISTRICT_AQUEDUCT"/>
+			<Set Aqueduct="0"/>
+		</Update>
+
+	</Districts>-->
+	
+	<!--资源移除和收割-->
+	
+
+	<Resource_Harvests>
+
+
+
+		<Delete ResourceType="RESOURCE_IRON" />
+		<!-- ="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_COAL" />
+		<!-- ="YIELD_PRODUCTION" Amount="90" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_ALUMINUM" />
+		<!-- ="YIELD_PRODUCTION" Amount="120" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_NITER" />
+		<!-- ="YIELD_PRODUCTION" Amount="70" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_OIL" />
+		<!-- ="YIELD_PRODUCTION" Amount="120" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_URANIUM" />
+		<!-- ="YIELD_SCIENCE" Amount="150" PrereqTech="TECH_IRON_WORKING"/>  -->
+
+
+
+
+		<Delete ResourceType="RESOURCE_DIAMONDS" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+
+		<Delete ResourceType="RESOURCE_SILVER" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+
+		<Delete ResourceType="RESOURCE_JADE" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+
+
+
+		<Delete ResourceType="RESOURCE_GYPSUM" />
+		<!-- ="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_MARBLE" />
+		<!-- ="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_MERCURY" />
+		<!-- ="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_PEARLS" />
+		<!-- ="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+		<Delete ResourceType="RESOURCE_SALT" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+
+		<Delete ResourceType="RESOURCE_AMBER" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>  -->
+
+
+
+
+
+
+
+
+
+
+		<Delete ResourceType="RESOURCE_FURS" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>  -->
+		<Delete ResourceType="RESOURCE_IVORY" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>  -->
+
+
+		<Delete ResourceType="RESOURCE_WHALES" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>  -->
+		<Delete ResourceType="RESOURCE_TURTLES" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>  -->
+
+
+		<Delete ResourceType="RESOURCE_HONEY" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>  -->
+		<Delete ResourceType="RESOURCE_HORSES" />
+		<!-- ="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>  -->
+
+
+
+
+
+		<Delete ResourceType="RESOURCE_SILK" />
+		<!-- ="YIELD_CULTURE" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_CITRUS" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_COCOA" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_COFFEE" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_COTTON" />
+		<!-- ="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+
+
+
+		<Delete ResourceType="RESOURCE_DYES" />
+		<!-- ="YIELD_SCIENCE" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_INCENSE" />
+		<!-- ="YIELD_FAITH" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+
+		<Delete ResourceType="RESOURCE_SPICES" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_SUGAR" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+
+
+		<Delete ResourceType="RESOURCE_TEA" />
+		<!-- ="YIELD_SCIENCE" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_TOBACCO" />
+		<!-- ="YIELD_FAITH" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_TRUFFLES" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_WINE" />
+		<!-- ="YIELD_CULTURE" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+		<Delete ResourceType="RESOURCE_OLIVES" />
+		<!-- ="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>  -->
+
+
+
+
+		<Row ResourceType="RESOURCE_IRON" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_COAL" YieldType="YIELD_PRODUCTION" Amount="90" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_ALUMINUM" YieldType="YIELD_PRODUCTION" Amount="120" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_NITER" YieldType="YIELD_PRODUCTION" Amount="70" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_OIL" YieldType="YIELD_PRODUCTION" Amount="120" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_URANIUM" YieldType="YIELD_SCIENCE" Amount="150" PrereqTech="TECH_IRON_WORKING"/>
+		
+		
+		
+		
+		<Row ResourceType="RESOURCE_DIAMONDS" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		
+		<Row ResourceType="RESOURCE_SILVER" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		
+		<Row ResourceType="RESOURCE_JADE" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		
+		
+		
+		<Row ResourceType="RESOURCE_GYPSUM" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_MARBLE" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_MERCURY" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_PEARLS" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		<Row ResourceType="RESOURCE_SALT" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		
+		<Row ResourceType="RESOURCE_AMBER" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRON_WORKING"/>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<Row ResourceType="RESOURCE_FURS" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+		<Row ResourceType="RESOURCE_IVORY" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+		
+		
+		<Row ResourceType="RESOURCE_WHALES" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+		<Row ResourceType="RESOURCE_TURTLES" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+		
+				
+		<Row ResourceType="RESOURCE_HONEY" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+		<Row ResourceType="RESOURCE_HORSES" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+		
+		
+		
+		
+		
+		<Row ResourceType="RESOURCE_SILK" YieldType="YIELD_CULTURE" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_CITRUS" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_COCOA" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_COFFEE" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_COTTON" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+	
+	
+	
+		<Row ResourceType="RESOURCE_DYES" YieldType="YIELD_SCIENCE" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_INCENSE" YieldType="YIELD_FAITH" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+	
+		<Row ResourceType="RESOURCE_SPICES" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_SUGAR" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		
+		
+		<Row ResourceType="RESOURCE_TEA" YieldType="YIELD_SCIENCE" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_TOBACCO" YieldType="YIELD_FAITH" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_TRUFFLES" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_WINE" YieldType="YIELD_CULTURE" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		<Row ResourceType="RESOURCE_OLIVES" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_IRRIGATION"/>
+		
+	
+
+	
+	</Resource_Harvests>
+	
+	
+
+	<!--人口价值加成-->
+
+	<BuildingModifiers>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_SCIENCE</ModifierId>
+
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_CULTURE</ModifierId>
+
+		</Row>
+		
+			<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_GOLD</ModifierId>
+
+		</Row>
+		
+			<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_FAITH</ModifierId>
+
+		</Row>
+
+	</BuildingModifiers>
+	
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_FAITH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+	</Modifiers>
+
+
+	<ModifierArguments>
+
+		<!--<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE,YIELD_CULTURE,YIELD_FAITH,YIELD_GOLD</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.2,0.2,0.2,0.2</Value>
+		</Row>-->
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.2</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.2</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.2</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_YIELD_PER_POP_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.2</Value>
+		</Row>
+
+	</ModifierArguments>
+
+
+	<!--丘陵城市加成-->
+
+
+	<Types>
+
+		<Row Type="MODIFIER_TYPE_NEA_PLAYER_DISTRICTS_ATTACH_MODIFIER" Kind="KIND_MODIFIER"/>
+
+	</Types>
+
+	<DynamicModifiers>
+
+		<Row ModifierType="MODIFIER_TYPE_NEA_PLAYER_DISTRICTS_ATTACH_MODIFIER" CollectionType="COLLECTION_PLAYER_DISTRICTS"  EffectType="EFFECT_ATTACH_MODIFIER"/>
+
+	</DynamicModifiers>
+
+
+	<DistrictModifiers>
+
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_HILLSBONUS_CITYCENTER_STRENGTH</ModifierId>
+		</Row>
+		
+		
+
+	</DistrictModifiers>
+
+
+	<BuildingModifiers>
+
+
+
+
+		<!--丘陵区域加城市防御-->
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_HILLSBONUS_DISTRICTS_ATTACH</ModifierId>
+
+		</Row>
+
+	</BuildingModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_HILLSBONUS_CITYCENTER_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
+			<OwnerRequirementSetId>REQSET_NEA_HILL_PLOT</OwnerRequirementSetId>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_HILLSBONUS_DISTRICTS_ATTACH</ModifierId>
+			<ModifierType>MODIFIER_TYPE_NEA_PLAYER_DISTRICTS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_HILL_PLOT</SubjectRequirementSetId>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_HILLSBONUS_DISTRICTS_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
+		</Row>
+		
+		
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MODIF_NEA_HILLSBONUS_CITYCENTER_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_HILLSBONUS_DISTRICTS_ATTACH</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MODIF_NEA_HILLSBONUS_DISTRICTS_STRENGTH</Value>
+		</Row>
+
+	
+		<Row>
+			<ModifierId>MODIF_NEA_HILLSBONUS_DISTRICTS_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		
+	</ModifierArguments>
+
+	<!--平地加成-->
+
+
+
+
+	<DistrictModifiers>
+
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FOOD</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_PRODUCTION</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_GOLD</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_CULTURE</ModifierId>
+		</Row>
+
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_SCIENCE</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_CITY_CENTER</DistrictType>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FAITH</ModifierId>
+		</Row>
+
+
+	</DistrictModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FOOD</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FAITH</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_GOLD</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_FOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_FLATBONUS_CITYCENTER_YIELD_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+
+
+	</ModifierArguments>
+	
+	
+			
+	<BuildingModifiers>
+		
+
+		
+		
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_HOUSING</ModifierId>
+
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_SCIENCE</ModifierId>
+
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FAITH</ModifierId>
+
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_CULTURE</ModifierId>
+
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_GOLD</ModifierId>
+
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FOOD</ModifierId>
+
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_PRODUCTION</ModifierId>
+
+		</Row>
+		
+
+	</BuildingModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_HOUSING</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_HOUSING</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FAITH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FOOD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<!--<OwnerRequirementSetId>REQSET_NEA_FLAT_PLOT</OwnerRequirementSetId>-->
+			<SubjectRequirementSetId>REQSET_NEA_FLAT_PLOT</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_HOUSING</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		
+		
+		
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		
+	
+		<Row>
+			<ModifierId>MODIF_NEA_DISTRICT_FLAT_ADJACENT_YIELD_FOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		
+		
+	
+
+	</ModifierArguments>
+	
+	
+
+
+	<!--<CivicModifiers>
+
+
+		<Row>
+			<CivicType>CIVIC_CODE_OF_LAWS</CivicType>
+			<ModifierId>PROJECT_COMPLETION_EXPLORE_ENTIRE_MAP</ModifierId>
+		</Row>
+
+
+	</CivicModifiers>-->
+
+
+	
+
+	<!--迁都功能-->
+
+	<Types>
+		<Row Type="PROJECT_NEA_MOVE_CAPITAL" Kind="KIND_PROJECT"/>
+	</Types>
+
+
+	<CivicModifiers>
+
+		
+
+		<Row>
+			<CivicType>CIVIC_CODE_OF_LAWS</CivicType>
+			<ModifierId>MODIF_NEA_MOVE_CAPITAL</ModifierId>
+		</Row>
+
+	</CivicModifiers>
+
+
+
+	<Projects>
+		<Row ProjectType="PROJECT_NEA_MOVE_CAPITAL" Name="LOC_PROJECT_NEA_MOVE_CAPITAL_NAME" ShortName="LOC_PROJECT_NEA_MOVE_CAPITAL_SHORT_NAME" Description="LOC_PROJECT_NEA_MOVE_CAPITAL_DESCRIPTION" PrereqDistrict="DISTRICT_CITY_CENTER" PrereqCivic="CIVIC_CODE_OF_LAWS" Cost="75" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000"/>
+	</Projects>
+	<Projects_XP2>
+		<Row ProjectType="PROJECT_NEA_MOVE_CAPITAL" MaxSimultaneousInstances="1" CreateBuilding="BUILDING_PALACE"/>
+	</Projects_XP2>
+	
+	
+	<Modifiers>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOVE_CAPITAL</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_CAPITAL</ModifierType>
+		</Row>
+
+	<!--strange-->
+
+	</Modifiers>
+
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>MODIF_NEA_MOVE_CAPITAL</ModifierId>
+			<Name>ProjectType</Name>
+			<Value>PROJECT_NEA_MOVE_CAPITAL</Value>
+		</Row>
+
+	</ModifierArguments>
+
+	<!--<ProjectCompletionModifiers>
+		<Row ProjectType="PROJECT_MOVE_CAPITAL" ModifierId="MODIFIER_MOVE_CAPITAL"/>
+	</ProjectCompletionModifiers>-->
+
+
+	<!--民族史诗，整合同化-->
+
+	<Types>
+		<Row Type="PROJECT_NEA_CONSTRUCT_PALACE" Kind="KIND_PROJECT"/>
+	</Types>
+
+
+	
+
+
+	<Projects>
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" Name="LOC_PROJECT_NEA_CONSTRUCT_PALACE_NAME" ShortName="LOC_PROJECT_NEA_CONSTRUCT_PALACE_SHORT_NAME" Description="LOC_PROJECT_NEA_CONSTRUCT_PALACE_DESCRIPTION" PrereqDistrict="DISTRICT_CITY_CENTER" PrereqCivic="CIVIC_CODE_OF_LAWS" Cost="120" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1800"/>
+	</Projects>
+	<Projects_XP2>
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" MaxSimultaneousInstances="1"/>
+	</Projects_XP2>
+
+	<ProjectCompletionModifiers>
+		<!--<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE" />-->
+		
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE_LOCAL_FAITH" />
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE_LOCAL_CULTURE" />
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_FAITH" />
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_CULTURE" />
+		
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE_CULTURE_BASED_ON_FAITH" />
+		<Row ProjectType="PROJECT_NEA_CONSTRUCT_PALACE" ModifierId="MODIF_NEA_CONSTRUCT_PALACE_FAITH_BASED_ON_CULTURE" />
+
+	</ProjectCompletionModifiers>
+
+
+	<Modifiers>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE</ModifierId>
+			<!--<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>-->
+			<ModifierType>MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_LOCAL_FAITH</ModifierId>
+			<!--<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>-->
+			<ModifierType>MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_LOCAL_CULTURE</ModifierId>
+			<!--<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>-->
+			<ModifierType>MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_FAITH</ModifierId>
+			<!--<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>-->
+			<ModifierType>MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_CULTURE</ModifierId>
+			<!--<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>-->
+			<ModifierType>MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CULTURE_BASED_ON_FAITH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_FAITH_BASED_ON_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE</ModifierType>
+		</Row>
+
+		<!--strange
+		CreateBuilding="BUILDING_PALACE"
+		
+
+		
+		-->
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_CAPITAL</ModifierType>
+		</Row>
+
+		
+
+	</Modifiers>
+
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL</ModifierId>
+			<Name>ProjectType</Name>
+			<Value>PROJECT_NEA_CONSTRUCT_PALACE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CULTURE_BASED_ON_FAITH</ModifierId>
+			<Name>YieldToGrant</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CULTURE_BASED_ON_FAITH</ModifierId>
+			<Name>YieldToBaseOn</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CULTURE_BASED_ON_FAITH</ModifierId>
+			<Name>Multiplier</Name>
+			<Value>5</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_FAITH_BASED_ON_CULTURE</ModifierId>
+			<Name>YieldToGrant</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_FAITH_BASED_ON_CULTURE</ModifierId>
+			<Name>YieldToBaseOn</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_FAITH_BASED_ON_CULTURE</ModifierId>
+			<Name>Multiplier</Name>
+			<Value>5</Value>
+		</Row>
+
+
+		
+
+		<!--<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_WATER_MILL</Value>
+		</Row>-->
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_LOCAL_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_LOCAL_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_LOCAL_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_LOCAL_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+
+
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_NEA_CONSTRUCT_PALACE_CAPITAL_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+
+
+	</ModifierArguments>
+
+	
+	
+	<!--食物项目-->
+	
+	
+
+	<Types>
+		<Row Type="PROJECT_NEA_XIUYANGSHENGXI" Kind="KIND_PROJECT"/>
+	</Types>
+
+
+	
+
+
+	<Projects>
+		<Row ProjectType="PROJECT_NEA_XIUYANGSHENGXI" Name="LOC_PROJECT_NEA_XIUYANGSHENGXI_NAME" ShortName="LOC_PROJECT_NEA_XIUYANGSHENGXI_SHORT_NAME" Description="LOC_PROJECT_NEA_XIUYANGSHENGXI_DESCRIPTION" PrereqDistrict="DISTRICT_CITY_CENTER" Cost="30" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="200"/>
+	</Projects>
+
+	<Project_YieldConversions>
+
+		<Row ProjectType="PROJECT_NEA_XIUYANGSHENGXI" YieldType="YIELD_FOOD" PercentOfProductionRate="35"/>
+	</Project_YieldConversions>
+
+
+
+	<!--测试用的宫殿强化-->
+
+	<Building_YieldChanges>
+
+		<!-- <Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>30</YieldChange>
+		</Row>-->
+		<Update>
+			<Where BuildingType="BUILDING_PALACE" YieldType="YIELD_PRODUCTION"/>
+			<Set YieldChange="1"/>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_PALACE" YieldType="YIELD_SCIENCE"/>
+			<Set YieldChange="1"/>
+		</Update>
+
+		<Update>
+			<Where BuildingType="BUILDING_PALACE" YieldType="YIELD_GOLD"/>
+			<Set YieldChange="3"/>
+		</Update>
+
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>0.1</YieldChange>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_MONUMENT</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>0</YieldChange>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_MONUMENT</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>0</YieldChange>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_MONUMENT</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>0</YieldChange>
+		</Row>
+
+	</Building_YieldChanges>
+
+
+
+
+
+</GameData>
+
+
+
+

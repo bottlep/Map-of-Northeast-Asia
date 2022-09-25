@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData11_NaturalWonder -->
+<!-- Author: bottlep -->
+<!-- DateCreated: 1/15/2022 4:16:59 PM -->
+<GameData>
+
+
+		<Types>
+			<Row Type="FEATURE_NEA_W_TAIHU" Kind="KIND_FEATURE"/>
+			<Row Type="FEATURE_NEA_W_FUJISAN" Kind="KIND_FEATURE"/>
+
+			<Row Type="FEATURE_NEA_W_DONGTINGHU" Kind="KIND_FEATURE"/>
+			<Row Type="FEATURE_NEA_W_POYANGHU" Kind="KIND_FEATURE"/>
+			<Row Type="FEATURE_NEA_W_QIANTANGJIANGKOU" Kind="KIND_FEATURE"/>
+
+			<Row Type="FEATURE_NEA_W_TAISHAN" Kind="KIND_FEATURE"/>
+			<Row Type="FEATURE_NEA_W_SONGSHAN" Kind="KIND_FEATURE"/>
+			<Row Type="FEATURE_NEA_W_HANGSAN" Kind="KIND_FEATURE"/>   <!--当地湘语发音-->
+			<Row Type="FEATURE_NEA_W_HENGSHAN" Kind="KIND_FEATURE"/>
+			<Row Type="FEATURE_NEA_W_HUASHAN" Kind="KIND_FEATURE"/>
+
+			<Row Type="FEATURE_NEA_W_EMEISHAN" Kind="KIND_FEATURE"/>
+			
+
+			<Row Type="FEATURE_NEA_W_JIESHI" Kind="KIND_FEATURE"/>
+
+
+			<Row Type="FEATURE_NEA_TEST" Kind="KIND_FEATURE"/>
+
+		</Types>
+
+
+
+		<Features>
+			<Row FeatureType="FEATURE_NEA_TEST" Name="LOC_TEST" DefenseModifier="1" AddsFreshWater="true"/>
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" Name="LOC_FEATURE_W_TAIHU_NAME" Description="LOC_FEATURE_W_TAIHU_DESCRIPTION" Quote="LOC_FEATURE_W_TAIHU_QUOTE" NaturalWonder="true" DefenseModifier="1" Appeal="2" AddsFreshWater="true" Settlement="false"  Lake="true" FollowRulesInWB="false" />
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" Name="LOC_FEATURE_W_DONGTINGHU_NAME" Description="LOC_FEATURE_W_DONGTINGHU_DESCRIPTION" Quote="LOC_FEATURE_W_DONGTINGHU_QUOTE" QuoteAudio="PLAY_ZHANGYE_DANXIA_QUOTE"  NaturalWonder="true" DefenseModifier="1" Appeal="2" AddsFreshWater="true" Settlement="false"  Lake="true" FollowRulesInWB="false" />
+			<!--QuoteAudio="PLAY_ZHANGYE_DANXIA_QUOTE"-->
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" Name="LOC_FEATURE_W_POYANGHU_NAME" Description="LOC_FEATURE_W_POYANGHU_DESCRIPTION" Quote="LOC_FEATURE_W_POYANGHU_QUOTE"  NaturalWonder="true" DefenseModifier="1" Appeal="2" AddsFreshWater="true" Settlement="false"  Lake="true" FollowRulesInWB="false" />
+
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" Name="LOC_FEATURE_W_FUJISAN_NAME" Description="LOC_FEATURE_W_FUJISAN_DESCRIPTION" Quote="LOC_FEATURE_W_FUJISAN_QUOTE" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="true" SightThroughModifier="2"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" Name="LOC_FEATURE_W_TAISHAN_NAME" Description="LOC_FEATURE_W_TAISHAN_DESCRIPTION" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="false" SightThroughModifier="2" AddsFreshWater="true" Removable="false"/>
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" Name="LOC_FEATURE_W_SONGSHAN_NAME" Description="LOC_FEATURE_W_SONGSHAN_DESCRIPTION" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="false" SightThroughModifier="2" AddsFreshWater="true" Removable="false"/>
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" Name="LOC_FEATURE_W_HANGSAN_NAME" Description="LOC_FEATURE_W_HANGSAN_DESCRIPTION" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="false" SightThroughModifier="2" AddsFreshWater="true" Removable="false"/>
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" Name="LOC_FEATURE_W_HUASHAN_NAME" Description="LOC_FEATURE_W_HUASHAN_DESCRIPTION" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="false" SightThroughModifier="2" AddsFreshWater="true" Removable="false"/>
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" Name="LOC_FEATURE_W_HENGSHAN_NAME" Description="LOC_FEATURE_W_HENGSHAN_DESCRIPTION" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="false" SightThroughModifier="2" AddsFreshWater="true" Removable="false"/>
+
+			<Row FeatureType="FEATURE_NEA_W_JIESHI" Name="LOC_FEATURE_W_JIESHI_NAME" Description="LOC_FEATURE_W_JIESHI_DESCRIPTION" NaturalWonder="true" DefenseModifier="1" Appeal="2" AddsFreshWater="false" Settlement="false"  Lake="true" FollowRulesInWB="false"/>
+			<Row FeatureType="FEATURE_NEA_W_QIANTANGJIANGKOU" Name="LOC_FEATURE_W_QIANTANGJIANGKOU_NAME" Description="LOC_FEATURE_W_JIESHI2_DESCRIPTION" NaturalWonder="true" DefenseModifier="1" Appeal="2" AddsFreshWater="false" Settlement="false"  Lake="true" FollowRulesInWB="false"/>
+
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" Name="LOC_FEATURE_W_EMEISHAN_NAME" Description="LOC_FEATURE_W_EMEISHAN_DESCRIPTION" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="false" SightThroughModifier="2" AddsFreshWater="true" Removable="false"/>
+
+
+			<!--
+		
+		<Row FeatureType="FEATURE_NEA_W_FUJISAN" Name="LOC_FEATURE_W_FUJISAN_NAME" Description="LOC_FEATURE_KILIMANJARO_DESCRIPTION" Quote="LOC_FEATURE_KILIMANJARO_QUOTE" QuoteAudio="PLAY_KILIMANJARO_QUOTE" NaturalWonder="true" Appeal="2"  NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="true" SightThroughModifier="2"/>
+		<Row FeatureType="FEATURE_KILIMANJARO" Name="LOC_FEATURE_KILIMANJARO_NAME" Description="LOC_FEATURE_KILIMANJARO_DESCRIPTION" Quote="LOC_FEATURE_KILIMANJARO_QUOTE" QuoteAudio="PLAY_KILIMANJARO_QUOTE" NaturalWonder="true" Appeal="2" NoRiver="true" NoCoast="true" Settlement="false" FollowRulesInWB="false" Impassable="true" SightThroughModifier="2" MinDistanceNW="8"/>
+		
+		-->
+		</Features>
+
+		<Features_XP2>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" Volcano="true"/>
+		</Features_XP2>
+
+		<Feature_ValidTerrains>
+			<Row FeatureType="FEATURE_NEA_TEST" TerrainType="TERRAIN_COAST"/>
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" TerrainType="TERRAIN_COAST"/>
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" TerrainType="TERRAIN_COAST"/>
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" TerrainType="TERRAIN_COAST"/>
+			<Row FeatureType="FEATURE_NEA_W_JIESHI" TerrainType="TERRAIN_COAST"/>
+			<Row FeatureType="FEATURE_NEA_W_QIANTANGJIANGKOU" TerrainType="TERRAIN_COAST"/>
+
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" TerrainType="TERRAIN_GRASS_MOUNTAIN"/>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" TerrainType="TERRAIN_PLAINS_MOUNTAIN"/>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" TerrainType="TERRAIN_DESERT_MOUNTAIN"/>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" TerrainType="TERRAIN_TUNDRA_MOUNTAIN"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" TerrainType="TERRAIN_NEA_WARM_MOUNTAIN__EASTJAPAN"/>
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" TerrainType="TERRAIN_NEA_TEMPERATE_MOUNTAIN__QILU"/>
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" TerrainType="TERRAIN_NEA_TEMPERATE_MOUNTAIN__ZHONGYUAN"/>
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" TerrainType="TERRAIN_NEA_WARM_MOUNTAIN__JINGXIANG"/>
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" TerrainType="TERRAIN_NEA_TEMPERATE_MOUNTAIN__GUANZHONG"/>
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" TerrainType="TERRAIN_NEA_TEMPERATE_MOUNTAIN__BINGDAI"/>
+			<Row FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_NEA_COLD__TUNGUS"/>
+			<Row FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_NEA_COLD_HILLS__TUNGUS"/>
+			<Row FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_COAST"/>
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" TerrainType="TERRAIN_NEA_WARM_MOUNTAIN__BASHU"/>
+			
+		</Feature_ValidTerrains>
+		<Feature_YieldChanges>
+
+			<Row FeatureType="FEATURE_NEA_TEST" YieldType="YIELD_FOOD" YieldChange="1"/>
+
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_FOOD" YieldChange="5"/>
+			<!--<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_PRODUCTION" YieldChange="3"/>-->
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_GOLD" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" YieldType="YIELD_FOOD" YieldChange="5"/>
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" YieldType="YIELD_GOLD" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" YieldType="YIELD_FOOD" YieldChange="5"/>
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" YieldType="YIELD_GOLD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" YieldType="YIELD_CULTURE" YieldChange="2"/>
+			
+			<Row FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_FOOD" YieldChange="1"/>
+			<Row FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			<!--<Update>
+				<Where FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_FAITH"/>
+				<Set YieldChange="2"/>
+			</Update>-->
+			
+			
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" YieldType="YIELD_FOOD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" YieldType="YIELD_FOOD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" YieldType="YIELD_FOOD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+			
+
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" YieldType="YIELD_FOOD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" YieldType="YIELD_FOOD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" YieldType="YIELD_FOOD" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" YieldType="YIELD_CULTURE" YieldChange="3"/>
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" YieldType="YIELD_FAITH" YieldChange="3"/>
+
+		</Feature_YieldChanges>
+
+		<Feature_AdjacentYields>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" YieldType="YIELD_CULTURE" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_FUJISAN" YieldType="YIELD_FAITH" YieldChange="1"/>
+
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_TAISHAN" YieldType="YIELD_FAITH" YieldChange="2"/>
+
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" YieldType="YIELD_FAITH" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_SONGSHAN" YieldType="YIELD_FOOD" YieldChange="1"/>
+
+			
+
+			
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" YieldType="YIELD_FAITH" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_HANGSAN" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+			
+			
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" YieldType="YIELD_FAITH" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_HUASHAN" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+			
+			
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" YieldType="YIELD_FAITH" YieldChange="2"/>
+			<Row FeatureType="FEATURE_NEA_W_HENGSHAN" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+			
+			
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_TAIHU" YieldType="YIELD_FOOD" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_DONGTINGHU" YieldType="YIELD_FOOD" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" YieldType="YIELD_GOLD" YieldChange="1"/>
+			<Row FeatureType="FEATURE_NEA_W_POYANGHU" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_FAITH" YieldChange="1"/>
+			<Row FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			
+		
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" YieldType="YIELD_CULTURE" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" YieldType="YIELD_FAITH" YieldChange="1"/>
+			
+			<Row FeatureType="FEATURE_NEA_W_EMEISHAN" YieldType="YIELD_GOLD" YieldChange="2"/>
+
+			
+		</Feature_AdjacentYields>
+	
+
+
+</GameData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData71_Colour -->
+<!-- Author: bottlep -->
+<!-- DateCreated: 7/8/2022 7:05:24 PM -->
+<Database>
+	<Colors>
+
+		<Update>
+			<Where Type="COLOR_CONTINENT_ASIAMERICA"/>
+			<Set Color="COLOR_STANDARD_WHITE_MD2,128"/>
+		</Update>
+	</Colors>
+
+</Database>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData51_Adaption -->
+<!-- Author: bottlep -->
+<!-- DateCreated: 1/25/2022 9:54:44 AM -->
+<GameData>
+
+
+
+
+	<Types>
+		<Row Type="LEADER_T_ROOSEVELT_ROUGHRIDER" Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_ANTIQUES_AND_PARKS" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_BULL_MOOSE" Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" Name="LOC_LEADER_T_ROOSEVELT_ROUGHRIDER_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Update>
+			<Where LeaderType="LEADER_T_ROOSEVELT"/>
+			<Set>
+				<Name>LOC_LEADER_T_ROOSEVELT_ORIGINAL_NAME765</Name>
+			</Set>
+		</Update>
+	</Leaders>
+
+	<Types>
+		<Row Type="LEADER_KUBLAI_KHAN_MONGOLIA" Kind="KIND_LEADER"/>
+	</Types>
+	
+	<Leaders>
+		<Row LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" Name="LOC_LEADER_KUBLAI_KHAN_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+	</Leaders>
+	
+
+</GameData>

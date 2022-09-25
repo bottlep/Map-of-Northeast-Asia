@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData02_MapSetting -->
+<!-- Author: Bottlep -->
+<!-- DateCreated: 2/8/2021 4:09:39 PM -->
+<GameData>
+	
+	<Types>
+		<Row Type="CONTINENT_PROPER_CHINA" Kind="KIND_CONTINENT"/>
+		<Row Type="CONTINENT_TUNGUS" Kind="KIND_CONTINENT"/>
+		<Row Type="CONTINENT_SAIBEI" Kind="KIND_CONTINENT"/>
+		<Row Type="CONTINENT_XIYU" Kind="KIND_CONTINENT"/>
+		<Row Type="CONTINENT_QINGZANG" Kind="KIND_CONTINENT"/>
+		<Row Type="CONTINENT_INDOCHINA" Kind="KIND_CONTINENT"/>
+		<Row Type="CONTINENT_YINGZHOU" Kind="KIND_CONTINENT"/>
+
+		<Row Type="MAPSIZE_SUPER" Kind="KIND_MAPSIZE"/>
+
+	</Types>
+
+	<Continents>
+		<Row ContinentType="CONTINENT_PROPER_CHINA" Description="LOC_CONTINENT_PROPER_CHINA"/>
+		<Row ContinentType="CONTINENT_TUNGUS" Description="LOC_CONTINENT_TUNGUS"/>
+		<Row ContinentType="CONTINENT_SAIBEI" Description="LOC_CONTINENT_SAIBEI"/>
+		<Row ContinentType="CONTINENT_XIYU" Description="LOC_CONTINENT_XIYU"/>
+		<Row ContinentType="CONTINENT_QINGZANG" Description="LOC_CONTINENT_QINGZANG"/>
+		<Row ContinentType="CONTINENT_INDOCHINA" Description="LOC_CONTINENT_INDOCHINA"/>
+		<Row ContinentType="CONTINENT_YINGZHOU" Description="LOC_CONTINENT_YINGZHOU"/>
+	</Continents>
+
+
+
+	<Maps>
+		<Row MapSizeType="MAPSIZE_SUPER" Name="LOC_MAPSIZE_SUPER_NAME" Description="LOC_MAPSIZE_SUPER_DESCRIPTION" DefaultPlayers="15" GridWidth="145" GridHeight="86" NumNaturalWonders="8" PlateValue="5" Continents="7"/>
+	</Maps>
+
+	<Map_GreatPersonClasses>
+		<Row MapSizeType="MAPSIZE_SUPER" GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET" MaxWorldInstances="8"/>
+	</Map_GreatPersonClasses>
+	
+
+</GameData>

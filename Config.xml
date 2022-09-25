@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Config -->
+<!-- Author: Bottlep -->
+<!-- DateCreated: 2/8/2021 4:07:10 PM -->
+<GameData>
+	<MapSizes>
+		<Row MapSizeType="MAPSIZE_SUPER" Name="LOC_MAPSIZE_SUPER_NAME" Description="LOC_MAPSIZE_SUPER_DESCRIPTION" MinPlayers="2" MaxPlayers="22" DefaultPlayers="15" MinCityStates="0" MaxCityStates="26" DefaultCityStates="20" SortIndex="70" />
+	</MapSizes>
+
+
+	<!--<Players>
+
+		<Update>
+			<Where CivilizationType="CIVILIZATION_CHINA" LeaderType="LEADER_QIN"/>
+			<Set CivilizationAbilityName="LOC_TRAIT_NEA_NATION_HAN_NAME" CivilizationAbilityDescription="LOC_TRAIT_NEA_NATION_HAN_DESCRIPTION" LeaderAbilityName="LOC_TRAIT_NEA_LEADER_ZHENG_NAME" LeaderAbilityDescription="LOC_TRAIT_NEA_LEADER_ZHENG_DESCRIPTION"/>
+		</Update>
+
+
+		<Update>
+			<Where CivilizationType="CIVILIZATION_CHINA" LeaderType="LEADER_KUBLAI_KHAN_CHINA"/>
+			<Set CivilizationType="CIVILIZATION_CANADA" CivilizationAbilityName="LOC_TRAIT_NEA_REGIME_YUAN_NAME" CivilizationAbilityDescription="LOC_TRAIT_NEA_REGIME_YUAN_DESCRIPTION" LeaderAbilityName="LOC_TRAIT_NEA_LEADER_KUBLAI_NAME" LeaderAbilityDescription="LOC_TRAIT_NEA_LEADER_KUBLAI_DESCRIPTION"/>
+		</Update>
+
+		<Update>
+			<Where CivilizationType="CIVILIZATION_AMERICA" LeaderType="LEADER_T_ROOSEVELT"/>
+			<Set  CivilizationAbilityName="LOC_TRAIT_NEA_REGIME_MING_NAME" CivilizationAbilityDescription="LOC_TRAIT_NEA_REGIME_MING_DESCRIPTION" LeaderAbilityName="LOC_TRAIT_NEA_LEADER_ZHUYUANZHANG_NAME" LeaderAbilityDescription="LOC_TRAIT_NEA_LEADER_ZHUYUANZHANG_DESCRIPTION"/>
+		</Update>
+
+
+
+	</Players>-->
+	
+	
+	<PlayerItems>
+		
+		<!--<Row CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_AZTEC_EAGLE_WARRIOR" Icon="ICON_UNIT_AZTEC_EAGLE_WARRIOR" Name="LOC_UNIT_AZTEC_EAGLE_WARRIOR_NAME" Description="LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION" SortIndex="10"/>
+		<Row CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="BUILDING_TLACHTLI" Icon="ICON_BUILDING_TLACHTLI" Name="LOC_BUILDING_TLACHTLI_NAME" Description="LOC_BUILDING_TLACHTLI_DESCRIPTION" SortIndex="20"/>
+		--><!-- Expansion 1 Support --><!--
+		<Row Domain="Players:Expansion1_Players" CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_AZTEC_EAGLE_WARRIOR" Icon="ICON_UNIT_AZTEC_EAGLE_WARRIOR" Name="LOC_UNIT_AZTEC_EAGLE_WARRIOR_NAME" Description="LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION" SortIndex="10"/>
+		<Row Domain="Players:Expansion1_Players" CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="BUILDING_TLACHTLI" Icon="ICON_BUILDING_TLACHTLI" Name="LOC_BUILDING_TLACHTLI_NAME" Description="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" SortIndex="20"/>
+		--><!-- Expansion 2 Support --><!--
+		<Row Domain="Players:Expansion2_Players" CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_AZTEC_EAGLE_WARRIOR" Icon="ICON_UNIT_AZTEC_EAGLE_WARRIOR" Name="LOC_UNIT_AZTEC_EAGLE_WARRIOR_NAME" Description="LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION" SortIndex="10"/>
+		<Row Domain="Players:Expansion2_Players" CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="BUILDING_TLACHTLI" Icon="ICON_BUILDING_TLACHTLI" Name="LOC_BUILDING_TLACHTLI_NAME" Description="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" SortIndex="20"/>-->
+	
+	</PlayerItems>
+
+	<DuplicateLeaders>
+		<!--<Delete LeaderType="LEADER_T_ROOSEVELT"/>-->
+		<Row Domain="Players:Expansion1_Players" LeaderType="LEADER_T_ROOSEVELT" OtherLeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER"/>
+	</DuplicateLeaders>
+
+
+	<Parameters>
+		<Row ParameterId="GameMode_NEA_Advanced" Name="LOC_GAMEMODE_NEA_ADVANCED_NAME" Description="LOC_GAMEMODE_NEA_ADVANCED_DESCRIPTION" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="GAMEMODE_NEA_ADVANCED" NameArrayConfigurationId="GAMEMODES_ENABLED_NAMES" GroupId="GameModes" SortIndex="100"/>
+		<Row ParameterId="GameMode_NEA_Advanced02" Name="LOC_GAMEMODE_NEA_ADVANCED02_NAME" Description="LOC_GAMEMODE_NEA_ADVANCED02_DESCRIPTION" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="GAMEMODE_NEA_ADVANCED02" NameArrayConfigurationId="GAMEMODES_ENABLED_NAMES" GroupId="GameModes" SortIndex="100"/>
+	
+	</Parameters>
+	<ParameterCriteria>
+		<Row ParameterId="Realism1" ConfigurationGroup="Game" ConfigurationId="GAMEMODE_NEA_ADVANCED" Operator="NotEquals" ConfigurationValue="1"/>
+		<Row ParameterId="GameMode_NEA_Advanced" ConfigurationGroup="Game" ConfigurationId="GAMEMODE_RANDOM" Operator="NotEquals" ConfigurationValue="1"/>
+		<Row ParameterId="Realism2" ConfigurationGroup="Game" ConfigurationId="GAMEMODE_NEA_ADVANCED02" Operator="NotEquals" ConfigurationValue="1"/>
+		<Row ParameterId="GameMode_NEA_Advanced02" ConfigurationGroup="Game" ConfigurationId="GAMEMODE_RANDOM" Operator="NotEquals" ConfigurationValue="1"/>
+
+	</ParameterCriteria>
+	<ParameterDependencies>
+		<Row ParameterId="GameMode_NEA_Advanced" ConfigurationGroup="Game" ConfigurationId="RULESET" Operator="Equals" ConfigurationValue="RULESET_EXPANSION_2"/>
+		<Row ParameterID="GameMode_NEA_Advanced" ConfigurationGroup="Game" ConfigurationId="WORLD_BUILDER" Operator="NotEquals" ConfigurationValue="1"/>
+
+		<Row ParameterId="GameMode_NEA_Advanced02" ConfigurationGroup="Game" ConfigurationId="RULESET" Operator="Equals" ConfigurationValue="RULESET_EXPANSION_2"/>
+		<Row ParameterID="GameMode_NEA_Advanced02" ConfigurationGroup="Game" ConfigurationId="WORLD_BUILDER" Operator="NotEquals" ConfigurationValue="1"/>
+	</ParameterDependencies>
+	<!--<ConfigurationUpdates>
+		<Row SourceGroup="Game" SourceId="GAMEMODE_NEA_ADVANCED" SourceValue="1" TargetGroup="Game" TargetId="GAME_REALISM" TargetValue="4" Hash="0" Static="1"/>
+		<Row SourceGroup="Game" SourceId="GAMEMODE_NEA_ADVANCED02" SourceValue="1" TargetGroup="Game" TargetId="GAME_REALISM" TargetValue="4" Hash="0" Static="1"/>
+
+	</ConfigurationUpdates>-->
+	<GameModeItems>
+		<Row GameModeType="GAMEMODE_NEA_ADVANCED" Name="LOC_GAMEMODE_NEA_ADVANCED_NAME" Description="LOC_GAMEMODE_NEA_ADVANCED_DESCRIPTION" Portrait="GAMEMODE_NEA_ADVANCED_NEUTRAL" Background="GAMEMODE_NEA_ADVANCED_BACKGROUND" Icon="ICON_DISTRICT_CITY_CENTER" SortIndex="10"/>
+		<Row GameModeType="GAMEMODE_NEA_ADVANCED02" Name="LOC_GAMEMODE_NEA_ADVANCED02_NAME" Description="LOC_GAMEMODE_NEA_ADVANCED02_DESCRIPTION" Portrait="GAMEMODE_NEA_ADVANCED02_NEUTRAL" Background="GAMEMODE_NEA_ADVANCED02_BACKGROUND" Icon="ICON_GAMEMODE_NEA_ADVANCED02" SortIndex="10"/>
+
+	</GameModeItems>
+
+
+	<GlobalParameters>
+
+		<Replace Name="LAKE_MAX_AREA_SIZE" Value="0" />
+		
+
+	</GlobalParameters>
+	
+</GameData>

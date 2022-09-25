@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData05_Civ_Leader -->
+<!-- Author: bottlep -->
+<!-- DateCreated: 1/2/2022 4:49:54 PM -->
+<GameData>
+	
+	<Types>
+		
+		<Row Type="TRAIT_NEA_NATION_HAN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_DONGHU" Kind="KIND_TRAIT"/>
+		<!--<Row Type="TRAIT_NEA_NATION_JAPAN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_KOREA" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_KHITAN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_MONGO" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_MANCHU" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_XIONGNU" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_TURK" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_NATION_TIBET" Kind="KIND_TRAIT"/>
+
+		<Row Type="TRAIT_NEA_NATION_CHINA" Kind="KIND_TRAIT"/>
+
+		<Row Type="TRAIT_NEA_LEADER_ZHENG" Kind="KIND_TRAIT"/>
+
+		<Row Type="TRAIT_NEA_LEADER_ZHUDI" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_LEADER_MAOZEDONG" Kind="KIND_TRAIT"/>-->
+
+		<Row Type="TRAIT_NEA_LEADER_ZHENG" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_LEADER_TEMUJIN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_LEADER_KUBLAI" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_LEADER_ZHUYUANZHANG" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_LEADER_ZHUDI" Kind="KIND_TRAIT"/>
+		
+		<Row Type="TRAIT_NEA_REGIME_QIN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_REGIME_MONGOLIA" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_REGIME_YUAN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_NEA_REGIME_MING" Kind="KIND_TRAIT"/>
+		
+		
+		
+	</Types>
+	
+	
+	
+
+
+	<Civilizations>
+		
+		<Update>
+			<Where CivilizationType="CIVILIZATION_CANADA"/>
+			<Set Name="LOC_NEA_REGIME_YUAN_NAME" Description="LOC_NEA_REGIME_YUAN_DESCRIPTION" Adjective="LOC_NEA_REGIME_YUAN_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" RandomCityNameDepth="10" Ethnicity="ETHNICITY_MEDIT"/>
+		</Update>
+		
+		
+		<!--<Update>
+			<Where CivilizationType="CIVILIZATION_AMERICA"/>
+			<Set Name="LOC_NEA_REGIME_MING_NAME" Description="LOC_NEA_REGIME_MING_DESCRIPTION" Adjective="LOC_NEA_REGIME_MING_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" RandomCityNameDepth="10" Ethnicity="ETHNICITY_ASIAN"/>
+		</Update>-->
+
+		
+	</Civilizations>
+	
+	
+
+	<CivilizationLeaders>
+		<Update>
+			<Where CivilizationType="CIVILIZATION_CANADA"/>
+			<Set LeaderType="LEADER_KUBLAI_KHAN_CHINA" CapitalName="LOC_CITY_NAME_BEIJING"/>
+		</Update>
+
+		<Delete CivilizationType="CIVILIZATION_CHINA" LeaderType="LEADER_KUBLAI_KHAN_CHINA"/>
+
+	</CivilizationLeaders>
+
+	<Leaders>
+		
+		<!--<Update>
+			<Where LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA"/>
+			<Set Name="LOC_NEA_LEADER_KUBLAI_MONGOLIA_NAME" Sex="Male"/>
+		</Update>
+
+		<Update>
+			<Where LeaderType="LEADER_KUBLAI_KHAN_CHINA"/>
+			<Set Name="LOC_NEA_LEADER_KUBLAI_YUAN_NAME" Sex="Male"/>
+		</Update>-->
+		
+		
+		
+	
+	
+	</Leaders>
+
+	<Traits>
+		<Row TraitType="TRAIT_NEA_NATION_HAN" Name="LOC_TRAIT_NEA_NATION_HAN_NAME" Description="LOC_TRAIT_NEA_NATION_HAN_DESCRIPTION"/>
+
+		<Row TraitType="TRAIT_NEA_NATION_DONGHU" Name="LOC_TRAIT_NEA_NATION_DONGHU_NAME" Description="LOC_TRAIT_NEA_NATION_DONGHU_DESCRIPTION"/>
+		
+
+
+
+		<Row TraitType="TRAIT_NEA_LEADER_ZHENG" Name="LOC_TRAIT_NEA_LEADER_ZHENG_NAME" Description="LOC_TRAIT_NEA_LEADER_ZHENG_DESCRIPTION"/>
+		<Row TraitType="TRAIT_NEA_LEADER_TEMUJIN" Name="LOC_TRAIT_NEA_LEADER_TEMUJIN_NAME" Description="LOC_TRAIT_NEA_LEADER_TEMUJIN_DESCRIPTION"/>
+		<Row TraitType="TRAIT_NEA_LEADER_KUBLAI" Name="LOC_TRAIT_NEA_LEADER_KUBLAI_NAME" Description="LOC_TRAIT_NEA_LEADER_KUBLAI_DESCRIPTION"/>
+
+	
+		<Row TraitType="TRAIT_NEA_LEADER_ZHUYUANZHANG" Name="LOC_TRAIT_NEA_LEADER_ZHUYUANZHANG_NAME" Description="LOC_TRAIT_NEA_LEADER_ZHUYUANZHANG_DESCRIPTION"/>
+		<Row TraitType="TRAIT_NEA_LEADER_ZHUDI" Name="LOC_TRAIT_NEA_LEADER_ZHUDI_NAME" Description="LOC_TRAIT_NEA_LEADER_ZHUDI_DESCRIPTION"/>
+		
+
+
+
+
+		<Row TraitType="TRAIT_NEA_REGIME_QIN" Name="LOC_TRAIT_NEA_REGIME_QIN_NAME" Description="LOC_TRAIT_NEA_REGIME_QIN_DESCRIPTION"/>
+		<Row TraitType="TRAIT_NEA_REGIME_YUAN" Name="LOC_TRAIT_NEA_REGIME_YUAN_NAME" Description="LOC_TRAIT_NEA_REGIME_YUAN_DESCRIPTION"/>
+		<Row TraitType="TRAIT_NEA_REGIME_MING" Name="LOC_TRAIT_NEA_REGIME_MING_NAME" Description="LOC_TRAIT_NEA_REGIME_MING_DESCRIPTION"/>
+
+		
+		<Row TraitType="TRAIT_NEA_REGIME_MONGOLIA" Name="LOC_TRAIT_NEA_REGIME_MONGOLIA_NAME" Description="LOC_TRAIT_NEA_REGIME_MONGOLIA_DESCRIPTION"/>
+
+
+	</Traits>
+
+
+	<CivilizationTraits>
+
+		<Delete CivilizationType="CIVILIZATION_CHINA"/>
+		<Row CivilizationType="CIVILIZATION_CHINA" TraitType="TRAIT_NEA_REGIME_QIN"/>
+		
+
+		<Delete CivilizationType="CIVILIZATION_MONGOLIA"/>
+		<Row CivilizationType="CIVILIZATION_MONGOLIA" TraitType="TRAIT_NEA_REGIME_MONGOLIA"/>
+
+		
+		<Delete CivilizationType="CIVILIZATION_CANADA"/>
+		<Row CivilizationType="CIVILIZATION_CANADA" TraitType="TRAIT_NEA_REGIME_YUAN"/>
+		
+		<Delete CivilizationType="CIVILIZATION_AMERICA"/>
+		<Row CivilizationType="CIVILIZATION_AMERICA" TraitType="TRAIT_NEA_REGIME_MING"/>
+		
+	</CivilizationTraits>
+
+	<LeaderTraits>
+		<Delete LeaderType="LEADER_QIN" TraitType="FIRST_EMPEROR_TRAIT"/>
+
+		<Row LeaderType="LEADER_QIN" TraitType="TRAIT_NEA_NATION_HAN"/>
+		<Row LeaderType="LEADER_QIN" TraitType="TRAIT_NEA_LEADER_ZHENG"/>
+		
+		
+
+		<Delete LeaderType="LEADER_GENGHIS_KHAN" TraitType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY"/>
+
+		<Row LeaderType="LEADER_GENGHIS_KHAN" TraitType="TRAIT_NEA_NATION_DONGHU"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" TraitType="TRAIT_NEA_LEADER_TEMUJIN"/>
+		
+		<Delete LeaderType="LEADER_KUBLAI_KHAN_CHINA" TraitType="TRAIT_LEADER_KUBLAI"/>
+
+		<Row LeaderType="LEADER_KUBLAI_KHAN_CHINA" TraitType="TRAIT_NEA_NATION_DONGHU"/>
+		<Row LeaderType="LEADER_KUBLAI_KHAN_CHINA" TraitType="TRAIT_NEA_LEADER_KUBLAI"/>
+		
+		
+		<Delete LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" TraitType="TRAIT_LEADER_KUBLAI"/>
+
+		<Row LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" TraitType="TRAIT_NEA_NATION_DONGHU"/>
+		<Row LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" TraitType="TRAIT_NEA_LEADER_KUBLAI"/>
+		
+		
+		
+		<Delete LeaderType="LEADER_T_ROOSEVELT"/>
+
+		<Row LeaderType="LEADER_T_ROOSEVELT" TraitType="TRAIT_NEA_NATION_HAN"/>
+		<Row LeaderType="LEADER_T_ROOSEVELT" TraitType="TRAIT_NEA_LEADER_ZHUYUANZHANG"/>
+		
+		<Delete LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER"/>
+		
+		<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" TraitType="TRAIT_NEA_NATION_HAN"/>
+		<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" TraitType="TRAIT_NEA_LEADER_ZHUDI"/>
+
+		<!--<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" TraitType="TRAIT_NEA_NATION_HAN"/>
+		<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" TraitType="TRAIT_NEA_LEADER_ZHUDI"/>-->
+		
+		
+
+		<!--<Delete LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" TraitType="TRAIT_LEADER_KUBLAI"/>
+
+		<Row LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" TraitType="TRAIT_NEA_NATION_DONGHU"/>
+		<Row LeaderType="LEADER_KUBLAI_KHAN_MONGOLIA" TraitType="TRAIT_NEA_LEADER_KUBLAI"/>
+
+		<Delete LeaderType="LEADER_KUBLAI_KHAN_CHINA" TraitType="TRAIT_LEADER_KUBLAI"/>
+
+		<Row LeaderType="LEADER_KUBLAI_KHAN_CHINA" TraitType="TRAIT_NEA_NATION_DONGHU"/>
+		<Row LeaderType="LEADER_KUBLAI_KHAN_CHINA" TraitType="TRAIT_NEA_LEADER_KUBLAI"/>-->
+		
+		
+	
+		<!--<Delete LeaderType="LEADER_T_ROOSEVELT"/>
+
+		<Row LeaderType="LEADER_T_ROOSEVELT" TraitType="TRAIT_NEA_NATION_HAN"/>
+		<Row LeaderType="LEADER_T_ROOSEVELT" TraitType="TRAIT_NEA_LEADER_ZHUYUANZHANG"/>
+		
+	
+		<Delete LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER"/>
+
+		<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" TraitType="TRAIT_NEA_NATION_HAN"/>
+		<Row LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" TraitType="TRAIT_NEA_LEADER_ZHUDI"/>-->
+
+	</LeaderTraits>
+	
+	
+	
+		
+
+
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHENG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHENG_BUILDER_WONDER</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHENG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHENG_BUILDER_WONDER_2</ModifierId>
+		</Row>
+
+
+
+	</TraitModifiers>
+
+
+	<Modifiers>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHENG_BUILDER_WONDER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_UNIT_WONDER_PERCENT</ModifierType>
+			<SubjectRequirementSetId>REQUIREMENTS_SET_1_2_ERA</SubjectRequirementSetId>
+		</Row>
+		
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHENG_BUILDER_WONDER_2</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_UNIT_WONDER_PERCENT</ModifierType>
+		</Row>
+
+
+	</Modifiers>
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHENG_BUILDER_WONDER</ModifierId>
+			<Name>Amount</Name>
+			<Value>70</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHENG_BUILDER_WONDER_2</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		
+	</ModifierArguments>
+
+
+	<Requirements>
+		<Row>
+			<RequirementId>REQUIRES_ERA_IS_1</RequirementId>
+			<RequirementType>REQUIREMENT_GAME_ERA_IS</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_ERA_IS_2</RequirementId>
+			<RequirementType>REQUIREMENT_GAME_ERA_IS</RequirementType>
+		</Row>
+
+		<Row>
+			<RequirementId>REQUIRES_WONDER_ERA_IS_1_2</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_WONDER_IS_ERA</RequirementType>
+		</Row>
+		
+	</Requirements>
+
+	<RequirementArguments>
+
+
+		<Row>
+			<RequirementId>REQUIRES_WONDER_ERA_IS_1_2</RequirementId>
+			<Name>EarliestEra</Name>
+			<Value>ERA_ANCIENT</Value>
+		</Row>
+
+		<Row>
+			<RequirementId>REQUIRES_WONDER_ERA_IS_1_2</RequirementId>
+			<Name>LatestEra</Name>
+			<Value>ERA_CLASSICAL</Value>
+		</Row>
+
+		<Row>
+			<RequirementId>REQUIRES_ERA_IS_1</RequirementId>
+			<Name>EraType</Name>
+			<Value>ERA_ANCIENT</Value>
+		</Row>
+
+		<Row>
+			<RequirementId>REQUIRES_ERA_IS_2</RequirementId>
+			<Name>EraType</Name>
+			<Value>ERA_CLASSICAL</Value>
+		</Row>
+
+	</RequirementArguments>
+
+	
+
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SET_1_2_ERA</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SET_WONDER_1_2_ERA</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+
+		
+
+	</RequirementSets>
+
+	<RequirementSetRequirements>
+
+
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SET_1_2_ERA</RequirementSetId>
+			<RequirementId>REQUIRES_ERA_IS_1</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SET_1_2_ERA</RequirementSetId>
+			<RequirementId>REQUIRES_ERA_IS_2</RequirementId>
+		</Row>
+
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SET_WONDER_1_2_ERA</RequirementSetId>
+			<RequirementId>REQUIRES_WONDER_ERA_IS_1_2</RequirementId>
+		</Row>
+		
+		
+		
+		
+
+	</RequirementSetRequirements>
+
+	<UnitCommands>
+
+
+		<Update>
+			<Where CommandType="UNITCOMMAND_WONDER_PRODUCTION"/>
+			<Set MaxEra="-1"/>
+		</Update>
+		
+	</UnitCommands>
+	
+	
+	
+	<!--朱元璋特质-->
+
+
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHUYUANZHANG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_WALLS_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHUYUANZHANG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_CASTLE_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHUYUANZHANG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_STAR_FORT_PRODUCTION</ModifierId>
+		</Row>
+
+
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHUYUANZHANG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_NEA_LEADER_ZHUYUANZHANG</TraitType>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_BULDINGS_PRODUCTION</ModifierId>
+		</Row>
+
+
+		
+	</TraitModifiers>
+
+
+	<Modifiers>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_WALLS_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_CASTLE_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_STAR_FORT_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_BULDINGS_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION</ModifierType>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
+		</Row>
+
+		
+
+
+	</Modifiers>
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_WALLS_PRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_WALLS</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_WALLS_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_CASTLE_PRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_CASTLE</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_CASTLE_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_STAR_FORT_PRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_STAR_FORT</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_STAR_FORT_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_PRODUCTION</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_ENCAMPMENT</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_BULDINGS_PRODUCTION</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_ENCAMPMENT</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>MODIF_TRAIT_NEA_LEADER_ZHUYUANZHANG_ENCAMPMENT_BULDINGS_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+
+
+		
+
+	</ModifierArguments>
+	
+	
+	
+	
+</GameData>
